@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+ <head>
+   <title>Путевки онлайн</title>
+   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+   <link rel="stylesheet" type="text/css" href="./css/main.css" />
+ </head>
+ <body>
+  <header class="site-header">
+   <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+     <div class="container">
+      <a class="navbar-brand site-header-logo" href="/">Путевки онлайн</a>
+
+      <button type="button" class="btn btn-primary">
+       Корзина <span class="badge badge-light">4</span>
+      </button>
+     </div>
+    </nav>
+   </div>
+  </header>
+
+ <section class="site-main mb-5">
+  <div class="container">
+   <table class="table">
+    <thead>
+    <tr>
+     <th scope="col">№</th>
+     <th scope="col">Путевка</th>
+     <th scope="col">Стоимость</th>
+     <th scope="col">Кол-во</th>
+     <th scope="col">Сумма</th>
+     <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+     <th scope="row">1</th>
+     <td>Париж</td>
+     <td>400 000 руб</td>
+     <td><input type="number" class="form-control cart-number" value="1" min="1"></td>
+     <td>400 000 руб</td>
+     <td><button type="button" class="btn btn-danger">Удалить</button></td>
+    </tr>
+    <tr>
+     <th scope="row">2</th>
+     <td>Москва</td>
+     <td>150 000 руб</td>
+     <td><input type="number" class="form-control cart-number" value="2" min="1"></td>
+     <td>300 000 руб</td>
+     <td><button type="button" class="btn btn-danger">Удалить</button></td>
+    </tr>
+    <tr>
+     <th scope="row" colspan="3">&nbsp;</th>
+     <td><b>Итого:</b></td>
+     <td>700 000 руб</td>
+     <td>&nbsp;</td>
+    </tr>
+    </tbody>
+   </table>
+  </div>
+ </section>
+
+ <footer>
+  <div class="footer-bottom">
+   <div class="container">
+    <div class="row d-flex">
+     <p class="col-lg-12 footer-text text-center">
+      Copyright ©2019
+    </div>
+   </div>
+  </div>
+ </footer>
+
+ <script src="main.js"></script>
+ </body>
+</html>
