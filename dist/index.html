@@ -13,7 +13,7 @@
       <a class="navbar-brand site-header-logo" href="/">Путевки онлайн</a>
 
       <a class="btn btn-primary" href="./cart.html">
-       Корзина <span class="badge badge-light">4</span>
+       Корзина <span class="badge badge-light" id="cartBadge">0</span>
       </a>
      </div>
     </nav>
@@ -26,31 +26,7 @@
     <div class="col-xl-3 col-lg-4 col-md-5">
      <div class="filter-sidebar">
       <div class="filter-sidebar-header">Страны:</div>
-      <div class="filter-sidebar-content">
-       <div class="form-check">
-        <input class="form-check-input" type="radio" name="country" id="country-0" value="0" checked>
-        <label class="form-check-label" for="country-0">
-         Все (21)
-        </label>
-       </div>
-       <div class="form-check">
-        <input class="form-check-input" type="radio" name="country" id="country-1" value="1">
-        <label class="form-check-label" for="country-1">
-         Россия (10)
-        </label>
-       </div>
-       <div class="form-check">
-        <input class="form-check-input" type="radio" name="country" id="country-2" value="2">
-        <label class="form-check-label" for="country-2">
-         Франция (5)
-        </label>
-       </div>
-       <div class="form-check">
-        <input class="form-check-input" type="radio" name="country" id="country-3" value="3" >
-        <label class="form-check-label" for="country-3">
-         Тайланд (6)
-        </label>
-       </div>
+      <div class="filter-sidebar-content" id="filter">
       </div>
      </div>
     </div>
@@ -58,7 +34,7 @@
      <div class="filter-bar">
       <div>
        <div class="input-group">
-        <input type="text" class="form-control" placeholder="Название города">
+        <input type="text" class="form-control" placeholder="Название города" id="prefix">
         <div class="input-group-append">
          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Искать</button>
         </div>
@@ -67,52 +43,8 @@
      </div>
 
      <section class="lattest-product-area pb-40 category-list">
-      <div class="row">
-        <div class="card text-center card-product">
-         <div class="card-product__img">
-          <img class="card-img" src="https://placeimg.com/255/255/nature" alt="">
-         </div>
-         <div class="card-body">
-          <p>Россия</p>
-          <h4 class="card-product__title">Сочи</h4>
-          <p class="card-product__price">200 000 руб</p>
-          <p><button type="button" class="btn btn-primary">Заказать</button></p>
-         </div>
-        </div>
-         <div class="card text-center card-product">
-          <div class="card-product__img">
-           <img class="card-img" src="https://placeimg.com/255/255/nature?2" alt="">
-          </div>
-          <div class="card-body">
-           <p>Франция</p>
-           <h4 class="card-product__title">Париж</h4>
-           <p class="card-product__price">150 000 руб</p>
-           <p><button type="button" class="btn btn-danger">Отмена</button></p>
-          </div>
-         </div>
-         <div class="card text-center card-product">
-          <div class="card-product__img">
-           <img class="card-img" src="https://placeimg.com/255/255/nature?3" alt="">
-          </div>
-          <div class="card-body">
-           <p>Тайланд</p>
-           <h4 class="card-product__title">Бангкок</h4>
-           <p class="card-product__price">50 000 руб</p>
-           <p><button type="button" class="btn btn-primary">Заказать</button></p>
-          </div>
-         </div>
-        <div class="card text-center card-product">
-         <div class="card-product__img">
-          <img class="card-img" src="https://placeimg.com/255/255/nature?4" alt="">
-         </div>
-         <div class="card-body">
-          <p>Тайланд</p>
-          <h4 class="card-product__title">Пхукет</h4>
-          <p class="card-product__price">60 000 руб</p>
-          <p><button type="button" class="btn btn-primary">Заказать</button></p>
-         </div>
-        </div>
-       </div>
+      <div class="row" id="stockList">
+      </div>
      </section>
 
     </div>
